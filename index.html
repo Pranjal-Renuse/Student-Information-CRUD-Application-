@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 class="bg-warning text-dark text-center p-4 font-weight-bold">Student Information</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-5">
+                <form action="/" method="GET" id="createStudent" class="font-italic">
+                    <div class="form-group">
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact">Contact</label>
+                        <input type="text" id="contact" class="form-control" required>
+                    </div>
+                    <div class="col-sm-12">
+                        <input type="submit" value="Submit" class="btn btn-dark text-white p-2 w-100" id="submit">
+                        <input type="button" value="Update Student" class="btn btn-primary text-white p-2 w-100" id="update">
+                    </div>
+                </form>
+            </div>
+            <div class="col-7">
+                <table class="table table-bordered font-italic">
+                    <thead>
+                        <th>Sr NO.</th>
+                        <th>Frist Name</th>
+                        <th>Last Name</th>
+                        <th>Email</th>
+                        <th>Contact</th>
+                    </thead>
+                    <tbody id="stdInfoHolder">
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>
